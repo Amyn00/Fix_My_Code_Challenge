@@ -4,25 +4,22 @@ User class
 """
 
 class User():
-    """ Documentation """
-
     def __init__(self):
-        """ Documentation """
+        """ Initialisation """
         self.__email = None
-
-    @email.setter
-    def email(self, value):
-        """ Documentation """
-        if type(value) is not str:
-            raise TypeError("email must be a string")
-        self.__email = value
 
     @property
     def email(self):
-        """ Documentation """
+        """ Getter for email """
         return self.__email
-   
-    
+
+    @email.setter
+    def email(self, value):
+        """ Setter for email """
+        if not isinstance(value, str):
+            raise TypeError("email must be a string")
+        self.__email = value
+
 if __name__ == "__main__":
 
     u = User()
