@@ -4,20 +4,20 @@ class square():
     """ Class Square"""
     
     def __init__(self, width=0, height=0):
-	"""Init the Square"""
-	self.width = width
-	self.height = height
+        """Init the Square"""
+        self.width = width
+        self.height = height
 
     def area_of_my_square(self):
         """ Area of the square """
         return self.width * self.height
 
     def PermiterOfMySquare(self):
-	"""Permiter of my Square"""
+        """Permiter of my Square"""
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
-	"""String function"""
+        """String function"""
         return "{}/{}".format(self.width, self.height)
 
 if __name__ == "__main__":
