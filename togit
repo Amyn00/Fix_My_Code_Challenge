@@ -5,6 +5,6 @@ git pull
 git add .
 
 read -p "Write your message here: " msg
-git commit -m $msg
+git commit -m "$msg"
 
 git push
